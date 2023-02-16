@@ -5,6 +5,6 @@ class TrimmerDecorator < Decorator
 
     else
       @nameable.correct_name
-      end
-	end
+    end
+  end
 end
