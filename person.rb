@@ -6,8 +6,7 @@ class Person
     @parent_permission = parent_permission
   end
   # getter and setter in one
-  attr_accessor :name
-  attr_accessor :age
+  attr_accessor :name, :age
 
   # getter
   attr_reader :id
@@ -15,7 +14,7 @@ class Person
   def of_age?
     @age >= 18
   end
-  private :is_of_age?
+  private :is_of_age?() || @parent_permission
 
   def can_use_services?
     @parent_permission || is_of_age?
