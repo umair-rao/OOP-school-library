@@ -23,7 +23,7 @@ class App
       puts 'There are no people'
     else
       @people.each do |person|
-      puts "[#{person.class}] name: #{person.name}, ID: #{person.id}, #{person.age}"
+        puts "[#{person.class}] name: #{person.name}, ID: #{person.id}, #{person.age}"
       end
     end
   end
