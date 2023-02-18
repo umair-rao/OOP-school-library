@@ -2,6 +2,7 @@ require_relative 'nameable'
 require_relative 'capitalize_decorator'
 require_relative 'trimmer_decorator'
 require_relative 'rentals'
+require_relative 'rentals'
 
 # Person class provide the defuslt implementation of the correct_name method
 class Person < Nameable
