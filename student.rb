@@ -11,6 +11,7 @@ class Student < Person
   def play_hooky
     '¯(ツ)/¯'
   end
+
   def manage_classroom(classroom)
     @classroom = classroom
     classroom.student.push(self) unless classroom.student.include?(self)
