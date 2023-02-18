@@ -103,7 +103,7 @@ class App
     pr_id = gets.chomp.to_i
     @rentals.each do |rental|
       if rental.person.id == pr_id
-        puts "Date: #{rental.date}, Book \"#{rental.book.title}\" by #{rental.book.author} borrowed by #{rental.person.name}"
+        puts "Date: #{rental.date}, Book \"#{rental.book.title}\" by #{rental.book.author}"
       end
     end
   end
