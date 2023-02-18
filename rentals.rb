@@ -3,7 +3,6 @@ require_relative 'book'
 
 class Rentals
   attr_accessor :date, :book, :person
-  attr_reader :person, :book
 
   def initialize(date, person, book)
     @date = date
