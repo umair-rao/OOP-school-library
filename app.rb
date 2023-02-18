@@ -20,8 +20,7 @@ class App
 
   def list_all_people(_people)
     @people.each do |person|
-      print "[#{person.class}] name: #{person.name}, ID: #{person.id}, #{person.age}"
-      puts ' '
+      puts "[#{person.class}] name: #{person.name}, ID: #{person.id}, #{person.age}"
     end
   end
 
@@ -100,11 +99,11 @@ class App
   end
 
   def list_rentals
-    puts 'ID of person:'
+    print 'ID of person:'
     pr_id = gets.chomp.to_i
-    @rentals.each do |rent|
-      if rent.person.id == pr_id
-        puts "Date:#{rent.date}, Book #{rent.book.title} by #{rent.book.author} borrowed by #{rent.person.name}"
+    @rentals.each do |rental|
+      if rental.person.id == pr_id
+        puts "Date: #{rental.date}, Book \"#{rental.book.title}\" by #{rental.book.author} borrowed by #{rental.person.name}"
       end
     end
   end
