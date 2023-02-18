@@ -19,8 +19,12 @@ class App
   end
 
   def list_all_people(_people)
-    @people.each do |person|
+    if @people.empty?
+      puts 'There are no people'
+    else
+      @people.each do |person|
       puts "[#{person.class}] name: #{person.name}, ID: #{person.id}, #{person.age}"
+      end
     end
   end
 
