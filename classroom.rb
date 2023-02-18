@@ -7,7 +7,7 @@ class Classroom
     @student = []
   end
 
-# add student manage the relationship between the classroom and student
+  # add student manage the relationship between the classroom and student
 
   def add_student(student)
     @student.push(student)
